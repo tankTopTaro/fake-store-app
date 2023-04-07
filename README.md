@@ -34,7 +34,7 @@ password:   "83r5^_"
 # Features implemented:
 - [x] Display all products
 - [x] User login
-- [ ] View product
+- [x] View product
 - [ ] Add to cart
 - [ ] Search Product
 - [ ] Sort Product by Category

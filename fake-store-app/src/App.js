@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('userToken') ?? null)
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route path='/' index element={<Home />} /> 
             <Route path='/login' element={<Login token={token} setToken={setToken} />} />
-            <Route path='/products' element={<Products />}/>
+            <Route path='/products' element={<Products />} />
+            <Route path='/products/:pid' element={<ProductDetail />} />
           </Routes>
         </div>
         <Footer />
